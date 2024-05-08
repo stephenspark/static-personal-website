@@ -23,6 +23,20 @@
     <slot />
   </body>
   <footer class="footer footer-center fixed inset-x-0 bottom-5">
-    Built with {Astro.generator}
+    <aside>
+      <p>
+        Built with <a
+          href="https://astro.build/"
+          target="_blank"
+          rel="noreferrer"
+          class="link">{Astro.generator}</a
+        >. Hosted with <a
+          href="https://vercel.com/home"
+          target="_blank"
+          rel="noreferrer"
+          class="link">Vercel</a
+        >.
+      </p>
+    </aside>
   </footer>
 </html>
