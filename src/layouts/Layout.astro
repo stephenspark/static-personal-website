@@ -1,0 +1,28 @@
+---
+
+---
+
+<!doctype html>
+<html
+  data-theme="dark"
+  lang="en"
+  class="mx-auto max-w-screen-xl overflow-y-scroll dark"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Welcome to my personal website and photography portfolio"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Stephen Park</title>
+  </head>
+  <body class="px-16 py-8">
+    <slot />
+  </body>
+  <footer class="footer footer-center fixed inset-x-0 bottom-5">
+    Built with {Astro.generator}
+  </footer>
+</html>

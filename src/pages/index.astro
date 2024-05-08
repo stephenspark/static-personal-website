@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import Prose from "../components/Prose.astro";
+---
+
+<Layout>
+  <main>
+    <Prose>
+      <h2>Welcome</h2>
+      <div class="avatar">
+        <div class="w-64 rounded">
+          <Image
+            src="https://stephen-park-personal-website-public.s3.amazonaws.com/assets/headshot.jpg"
+            alt="headshot"
+            width="256"
+            height="256"
+          />
+        </div>
+      </div>
+      <p>
+        Hello! My name is <b>Stephen Park</b>. I'm a remote <b
+          >Senior Software Engineer</b
+        > based out of <b>Seattle, Washington</b>.
+      </p>
+      <p>
+        I enjoy trying out new frameworks and tools, foreign language learning,
+        basketball, travel, and <a
+          href="https://glass.photo/stephen-park"
+          target="_blank"
+          rel="noreferrer"
+          class="link">photography</a
+        >.
+      </p>
+      <p>
+        For more detailed information, check out my
+        <a
+          href="https://stephen-park-personal-website-public.s3.amazonaws.com/assets/current_resume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          class="link">resume</a
+        >!
+      </p>
+    </Prose>
+  </main>
+</Layout>
