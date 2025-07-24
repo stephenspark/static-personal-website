@@ -6,7 +6,8 @@ import { test, expect } from 'vitest';
 test('astro build exits with code 0', () => {
   const result = spawnSync('npx', ['astro', 'build'], {
     encoding: 'utf-8',
-    stdio: 'pipe'
+    stdio: 'pipe',
+    timeout: 60000 // Set timeout to 60 seconds
   });
 
   if (result.stdout) process.stdout.write(result.stdout);
