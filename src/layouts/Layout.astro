@@ -21,22 +21,22 @@
   </head>
   <body class="px-16 py-8">
     <slot />
+    <footer class="footer footer-center fixed inset-x-0 bottom-5">
+      <aside>
+        <p>
+          Built with <a
+            href="https://astro.build/"
+            target="_blank"
+            rel="noreferrer"
+            class="link">{Astro.generator}</a
+          >. Hosted with <a
+            href="https://vercel.com/home"
+            target="_blank"
+            rel="noreferrer"
+            class="link">Vercel</a
+          >.
+        </p>
+      </aside>
+    </footer>
   </body>
-  <footer class="footer footer-center fixed inset-x-0 bottom-5">
-    <aside>
-      <p>
-        Built with <a
-          href="https://astro.build/"
-          target="_blank"
-          rel="noreferrer"
-          class="link">{Astro.generator}</a
-        >. Hosted with <a
-          href="https://vercel.com/home"
-          target="_blank"
-          rel="noreferrer"
-          class="link">Vercel</a
-        >.
-      </p>
-    </aside>
-  </footer>
 </html>
