@@ -10,25 +10,27 @@ import Prose from "../components/Prose.astro";
 <Layout>
   <main>
     <Prose>
-      <h2>Welcome</h2>
-      <div class="avatar">
-        <div class="w-64 rounded">
-          <Image
-            src="https://stephen-park-personal-website-public.s3.amazonaws.com/assets/headshot.jpg"
-            alt="headshot"
-            width="256"
-            height="256"
-          />
+      <h1>Stephen Park</h1>
+      <div class="not-prose flex items-center gap-4 mb-4">
+        <div class="avatar">
+          <div class="w-24 rounded-full">
+            <Image
+              src="https://stephen-park-personal-website-public.s3.amazonaws.com/assets/headshot.jpg"
+              alt="Stephen Park headshot"
+              width="96"
+              height="96"
+            />
+          </div>
+        </div>
+        <div>
+          <p class="text-lg font-semibold">Senior Software Engineer</p>
+          <p class="text-base-content/70">Seattle, Washington</p>
         </div>
       </div>
       <p>
-        Hello! My name is <b>Stephen Park</b>. I'm a remote <b
-          >Senior Software Engineer</b
-        > based out of <b>Seattle, Washington</b>.
-      </p>
-      <p>
-        I enjoy trying out new frameworks and tools, foreign language learning,
-        basketball, travel, and <a
+        Hello! I'm a remote software engineer who enjoys trying out new
+        frameworks and tools, foreign language learning, basketball, travel,
+        and <a
           href="https://glass.photo/stephen-park"
           target="_blank"
           rel="noreferrer"
@@ -36,14 +38,39 @@ import Prose from "../components/Prose.astro";
         >.
       </p>
       <p>
-        For more detailed information, check out my
-        <a
+        For more, check out my <a
           href="https://stephen-park-personal-website-public.s3.amazonaws.com/assets/StephenParkResume2025.pdf"
           target="_blank"
           rel="noreferrer"
           class="link">resume</a
-        >!
+        >.
       </p>
+      <div class="not-prose flex gap-4 mt-6">
+        <a
+          href="https://github.com/stephenspark"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline btn-sm"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/stephenspark"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline btn-sm"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://glass.photo/stephen-park"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-outline btn-sm"
+        >
+          Photography
+        </a>
+      </div>
     </Prose>
   </main>
 </Layout>
