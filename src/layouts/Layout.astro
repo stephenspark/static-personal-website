@@ -15,11 +15,7 @@ const pageTitle = title === "Stephen Park" ? title : `${title} | Stephen Park`;
 ---
 
 <!doctype html>
-<html
-  data-theme="dark"
-  lang="en"
-  class="mx-auto max-w-screen-xl overflow-y-scroll dark"
->
+<html data-theme="dark" lang="en" class="overflow-y-scroll dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -33,22 +29,12 @@ const pageTitle = title === "Stephen Park" ? title : `${title} | Stephen Park`;
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
   </head>
-  <body class="px-4 sm:px-8 md:px-16 py-8 pb-20">
+  <body class="min-h-screen flex flex-col">
     <slot />
-    <footer class="footer footer-center fixed inset-x-0 bottom-0 py-4 bg-base-100/80 backdrop-blur-sm border-t border-base-300">
+    <footer class="footer footer-center fixed inset-x-0 bottom-0 py-3 bg-base-100/80 backdrop-blur-sm border-t border-base-300">
       <aside>
-        <p>
-          Built with <a
-            href="https://astro.build/"
-            target="_blank"
-            rel="noreferrer"
-            class="link">{Astro.generator}</a
-          >. Hosted with <a
-            href="https://vercel.com/home"
-            target="_blank"
-            rel="noreferrer"
-            class="link">Vercel</a
-          >.
+        <p class="text-xs text-base-content/40">
+          Built with <a href="https://astro.build/" target="_blank" rel="noreferrer" class="link link-hover">{Astro.generator}</a>. Hosted with <a href="https://vercel.com/home" target="_blank" rel="noreferrer" class="link link-hover">Vercel</a>.
         </p>
       </aside>
     </footer>

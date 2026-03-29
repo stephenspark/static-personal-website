@@ -2,16 +2,15 @@
 import { Image } from "astro:assets";
 import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
-import Prose from "../components/Prose.astro";
 ---
 
 <Layout>
-  <main>
-    <Prose>
-      <h1>Stephen Park</h1>
-      <div class="not-prose flex items-center gap-4 mb-4">
-        <div class="avatar">
-          <div class="w-24 rounded-full">
+  <main class="flex-1 flex items-center justify-center px-6 py-20">
+    <div class="w-full max-w-lg animate-fade-up">
+
+      <div class="flex flex-col items-center text-center mb-8">
+        <div class="avatar mb-5">
+          <div class="w-24 rounded-full ring-1 ring-base-content/10">
             <Image
               src="https://stephen-park-personal-website-public.s3.amazonaws.com/assets/headshot.jpg"
               alt="Stephen Park headshot"
@@ -20,55 +19,43 @@ import Prose from "../components/Prose.astro";
             />
           </div>
         </div>
-        <div>
-          <p class="text-lg font-semibold">Senior Software Engineer</p>
-          <p class="text-base-content/70">Seattle, Washington</p>
-        </div>
+        <h1 class="text-2xl font-bold tracking-tight">Stephen Park</h1>
+        <p class="text-sm text-base-content/60 mt-1">Senior Software Engineer &middot; Seattle, WA</p>
       </div>
-      <p>
-        Hello! I'm a remote software engineer who enjoys trying out new
-        frameworks and tools, foreign language learning, basketball, travel,
-        and <a
-          href="https://glass.photo/stephen-park"
-          target="_blank"
-          rel="noreferrer"
-          class="link">photography</a
-        >.
-      </p>
-      <p>
-        For more, check out my <a
-          href="https://stephen-park-personal-website-public.s3.amazonaws.com/assets/StephenParkResume2025.pdf"
-          target="_blank"
-          rel="noreferrer"
-          class="link">resume</a
-        >.
-      </p>
-      <div class="not-prose flex gap-4 mt-6">
-        <a
-          href="https://github.com/stephenspark"
-          target="_blank"
-          rel="noreferrer"
-          class="btn btn-outline btn-sm"
-        >
+
+      <div class="space-y-3 text-base-content/70 leading-relaxed mb-8">
+        <p>
+          Hello! I'm a remote software engineer who enjoys trying out new
+          frameworks and tools, foreign language learning, basketball, travel,
+          and <a
+            href="https://glass.photo/stephen-park"
+            target="_blank"
+            rel="noreferrer"
+            class="text-base-content underline underline-offset-4 decoration-base-content/30 hover:decoration-base-content transition-colors"
+          >photography</a>.
+        </p>
+        <p>
+          For more, check out my <a
+            href="https://stephen-park-personal-website-public.s3.amazonaws.com/assets/StephenParkResume2025.pdf"
+            target="_blank"
+            rel="noreferrer"
+            class="text-base-content underline underline-offset-4 decoration-base-content/30 hover:decoration-base-content transition-colors"
+          >resume</a>.
+        </p>
+      </div>
+
+      <div class="flex gap-2 justify-center">
+        <a href="https://github.com/stephenspark" target="_blank" rel="noreferrer" class="btn btn-ghost btn-sm">
           GitHub
         </a>
-        <a
-          href="https://www.linkedin.com/in/stephenspark"
-          target="_blank"
-          rel="noreferrer"
-          class="btn btn-outline btn-sm"
-        >
+        <a href="https://www.linkedin.com/in/stephenspark" target="_blank" rel="noreferrer" class="btn btn-ghost btn-sm">
           LinkedIn
         </a>
-        <a
-          href="https://glass.photo/stephen-park"
-          target="_blank"
-          rel="noreferrer"
-          class="btn btn-outline btn-sm"
-        >
+        <a href="https://glass.photo/stephen-park" target="_blank" rel="noreferrer" class="btn btn-ghost btn-sm">
           Photography
         </a>
       </div>
-    </Prose>
+
+    </div>
   </main>
 </Layout>
