@@ -1,5 +1,6 @@
 ---
 import SpeedInsights from "@vercel/speed-insights/astro";
+import Analytics from "@vercel/analytics/astro";
 
 interface Props {
   title?: string;
@@ -24,6 +25,7 @@ const pageTitle = title === "Stephen Park" ? title : `${title} | Stephen Park`;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <SpeedInsights />
+    <Analytics />
     <!-- Open Graph -->
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
@@ -38,36 +40,74 @@ const pageTitle = title === "Stephen Park" ? title : `${title} | Stephen Park`;
     </script>
   </head>
   <body class="min-h-screen flex flex-col">
-    <label class="swap swap-rotate btn btn-ghost btn-circle btn-sm fixed top-4 right-4 z-50" aria-label="Toggle theme">
+    <label
+      class="swap swap-rotate btn btn-ghost btn-circle btn-sm fixed top-4 right-4 z-50"
+      aria-label="Toggle theme"
+    >
       <input type="checkbox" id="theme-toggle" />
       <!-- sun: shown when unchecked (dark mode) -->
-      <svg class="swap-off" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="12" r="5"/>
-        <line x1="12" y1="1" x2="12" y2="3"/>
-        <line x1="12" y1="21" x2="12" y2="23"/>
-        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-        <line x1="1" y1="12" x2="3" y2="12"/>
-        <line x1="21" y1="12" x2="23" y2="12"/>
-        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      <svg
+        class="swap-off"
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
       </svg>
       <!-- moon: shown when checked (light mode) -->
-      <svg class="swap-on" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+      <svg
+        class="swap-on"
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
       </svg>
     </label>
     <slot />
-    <footer class="footer footer-center fixed inset-x-0 bottom-0 py-3 bg-base-100/80 backdrop-blur-sm border-t border-base-300">
+    <footer
+      class="footer footer-center fixed inset-x-0 bottom-0 py-3 bg-base-100/80 backdrop-blur-sm border-t border-base-300"
+    >
       <aside>
         <p class="text-xs text-base-content/40">
-          Built with <a href="https://astro.build/" target="_blank" rel="noreferrer" class="link link-hover">{Astro.generator}</a>. Hosted with <a href="https://vercel.com/home" target="_blank" rel="noreferrer" class="link link-hover">Vercel</a>.
+          Built with <a
+            href="https://astro.build/"
+            target="_blank"
+            rel="noreferrer"
+            class="link link-hover">{Astro.generator}</a
+          >. Hosted with <a
+            href="https://vercel.com/home"
+            target="_blank"
+            rel="noreferrer"
+            class="link link-hover">Vercel</a
+          >.
         </p>
       </aside>
     </footer>
     <script is:inline>
       const toggle = document.getElementById("theme-toggle");
-      toggle.checked = document.documentElement.getAttribute("data-theme") === "silk";
+      toggle.checked =
+        document.documentElement.getAttribute("data-theme") === "silk";
 
       toggle.addEventListener("change", () => {
         const next = toggle.checked ? "silk" : "dark";
