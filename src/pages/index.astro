@@ -7,7 +7,6 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <main class="flex-1 flex items-center justify-center px-6 py-20">
     <div class="w-full max-w-lg animate-fade-up">
-
       <div class="flex flex-col items-center text-center mb-8">
         <div class="avatar mb-5">
           <div class="w-24 rounded-full ring-1 ring-base-content/10">
@@ -20,19 +19,51 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
         <h1 class="text-2xl font-bold tracking-tight">Stephen Park</h1>
-        <p class="text-sm text-base-content/60 mt-1">Senior Software Engineer &middot; Seattle, WA</p>
+        <p class="text-sm text-base-content/60 mt-1">
+          Senior Software Engineer &middot; Seattle, WA
+        </p>
       </div>
 
-      <div class="space-y-3 text-base-content/70 leading-relaxed mb-8">
+      <div class="space-y-5 text-base-content/70 leading-relaxed mb-8">
         <p>
           Hello! I'm a remote software engineer who enjoys trying out new
-          frameworks and tools, foreign language learning, basketball, travel,
-          and <a
-            href="https://glass.photo/stephen-park"
+          <span
+            class="tooltip tooltip-bottom cursor-help underline decoration-dotted underline-offset-4 decoration-base-content/40"
+            data-tip="Currently: Astro, SvelteKit, Bun, Elysia, Drizzle"
+          >
+            frameworks and tools</span
+          >,
+          <span
+            class="tooltip tooltip-bottom cursor-help underline decoration-dotted underline-offset-4 decoration-base-content/40"
+            data-tip="Working on Japanese 🇯🇵 Relearning Korean 🇰🇷"
+            >foreign language learning</span
+          >,
+          <span
+            class="tooltip tooltip-bottom cursor-help underline decoration-dotted underline-offset-4 decoration-base-content/40"
+            data-tip="Houston Rockets 🏀">basketball</span
+          >,
+          <span
+            class="tooltip tooltip-bottom cursor-help underline decoration-dotted underline-offset-4 decoration-base-content/40"
+            data-tip="Up next: Italy, Japan ✈️">travel</span
+          >,
+          <span
+            class="tooltip tooltip-bottom cursor-help underline decoration-dotted underline-offset-4 decoration-base-content/40"
+            data-tip="Indoor v4 working on v5 ⛰️">climbing</span
+          >, and <span
+            class="tooltip tooltip-bottom cursor-help underline decoration-dotted underline-offset-4 decoration-base-content/40"
+            data-tip="My kit: Fujifilm XS-20. Sigma 56mm f/1.4. Sigma 23mm f/1.4"
+            >photography</span
+          >.
+        </p>
+        <p>
+          I currently work at <a
+            href="https://www.leveltenenergy.com"
             target="_blank"
             rel="noreferrer"
             class="text-base-content underline underline-offset-4 decoration-base-content/30 hover:decoration-base-content transition-colors"
-          >photography</a>.
+            >LevelTen Energy</a
+          >, where I help build the transaction infrastructure powering the
+          global clean energy transition.
         </p>
         <p>
           For more, check out my <a
@@ -40,22 +71,36 @@ import Layout from "../layouts/Layout.astro";
             target="_blank"
             rel="noreferrer"
             class="text-base-content underline underline-offset-4 decoration-base-content/30 hover:decoration-base-content transition-colors"
-          >resume</a>.
+            >resume</a
+          >.
         </p>
       </div>
-
       <div class="flex gap-2 justify-center">
-        <a href="https://github.com/stephenspark" target="_blank" rel="noreferrer" class="btn btn-ghost btn-sm">
+        <a
+          href="https://github.com/stephenspark"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-ghost btn-sm"
+        >
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/stephenspark" target="_blank" rel="noreferrer" class="btn btn-ghost btn-sm">
+        <a
+          href="https://www.linkedin.com/in/stephenspark"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-ghost btn-sm"
+        >
           LinkedIn
         </a>
-        <a href="https://glass.photo/stephen-park" target="_blank" rel="noreferrer" class="btn btn-ghost btn-sm">
+        <a
+          href="https://glass.photo/stephen-park"
+          target="_blank"
+          rel="noreferrer"
+          class="btn btn-ghost btn-sm"
+        >
           Photography
         </a>
       </div>
-
     </div>
   </main>
 </Layout>
