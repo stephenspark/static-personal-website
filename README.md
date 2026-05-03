@@ -10,7 +10,7 @@ Built with [Astro](https://astro.build), [Tailwind CSS v4](https://tailwindcss.c
 - **Styling**: Tailwind CSS v4 + DaisyUI v5 + `@tailwindcss/typography`
 - **Analytics**: Vercel Speed Insights
 - **Package Manager**: pnpm
-- **Node**: >=24.12.0
+- **Node**: >=24.15.0
 
 ## Commands
 
