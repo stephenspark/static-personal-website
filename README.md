@@ -8,12 +8,12 @@ Built with [Astro](https://astro.build), [Tailwind CSS v4](https://tailwindcss.c
 
 | Layer | Technology |
 | :---- | :--------- |
-| Framework | Astro 6 |
+| Framework | Astro 7 |
 | Styling | Tailwind CSS v4 + DaisyUI v5 + `@tailwindcss/typography` |
 | Analytics | Vercel Analytics + Speed Insights |
 | Testing | Vitest |
 | Package Manager | pnpm |
-| Node | >=24.15.0 |
+| Node | >=24.18.0 |
 
 ## Commands
 
