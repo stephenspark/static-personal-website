@@ -4,9 +4,10 @@ import { test, expect } from 'vitest';
 // This test ensures the project builds without errors
 
 test('astro build exits with code 0', () => {
-  const result = spawnSync('npx', ['astro', 'build'], {
+  const result = spawnSync('pnpm build', {
     encoding: 'utf-8',
     stdio: 'pipe',
+    shell: true,
     timeout: 60000 // Set timeout to 60 seconds
   });
 

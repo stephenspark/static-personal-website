@@ -16,7 +16,7 @@ There is no separate lint command — `pnpm build` runs `astro check` for TypeSc
 
 ## Architecture
 
-This is a single-page Astro 6 static site. The only page is `src/pages/index.astro`.
+This is a single-page Astro 7 static site. The only page is `src/pages/index.astro`.
 
 **Rendering model**: Fully static (no server-side rendering). All content is baked at build time and deployed to Vercel as static assets.
 
