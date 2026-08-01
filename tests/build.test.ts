@@ -4,15 +4,19 @@ import { test, expect } from 'vitest';
 // This test ensures the project builds without errors
 
 test('astro build exits with code 0', () => {
-  const result = spawnSync('pnpm build', {
+  const packageManager = process.env.npm_execpath;
+  const result = spawnSync(
+    packageManager ? process.execPath : 'pnpm',
+    packageManager ? [packageManager, 'run', 'build'] : ['run', 'build'],
+    {
     encoding: 'utf-8',
     stdio: 'pipe',
-    shell: true,
     timeout: 60000 // Set timeout to 60 seconds
-  });
+    }
+  );
 
   if (result.stdout) process.stdout.write(result.stdout);
   if (result.stderr) process.stderr.write(result.stderr);
 
   expect(result.status).toBe(0);
-});
+}, 65000);
