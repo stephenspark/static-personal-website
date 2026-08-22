@@ -10,15 +10,15 @@
     "astro": "astro",
     "test": "vitest run"
   },
-  "packageManager": "pnpm@11.19.0+sha512.7881f3ed590d472c4a955e2b88b2121791116066dcc88cbca3849ec9b60f1bbaa6d2ccb221fa91da4e1c65bef2bcbe379365aea7ac539c7bf86dedc3a1b22dce",
+  "packageManager": "pnpm@11.22.0+sha512.1ff870c4c6133dfd88fb2afc46dd13d47f09c9794b438c6fdb47ca98caf3bc16381ee0be93a091b8e3824cf01f889f46d7d9e20910fb0be1ab0fb5baa80dd621",
   "engines": {
-    "node": ">=24.18.0",
-    "pnpm": ">=11.0.0"
+    "node": ">=24.19.0",
+    "pnpm": ">=11.22.0"
   },
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "^24.18.0",
+      "version": "^24.19.0",
       "onFail": "download"
     }
   },
@@ -26,7 +26,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "astro": "^7.1.6",
+    "astro": "^7.2.4",
     "sharp": "^0.35.3",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"
@@ -34,8 +34,8 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@tailwindcss/typography": "^0.5.20",
-    "@types/node": "^26.1.2",
-    "daisyui": "^5.7.9",
+    "@types/node": "^26.2.0",
+    "daisyui": "^5.7.20",
     "vitest": "^4.1.10"
   }
 }
