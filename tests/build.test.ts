@@ -4,10 +4,12 @@ import { test, expect } from 'vitest';
 // This test ensures the project builds without errors
 
 test('astro build exits with code 0', () => {
-  const packageManager = process.env.npm_execpath;
+  // npm_execpath is a JS entry point under Node-based installs, or a native binary (e.g. pnpm.exe)
+  const packageManager = process.env.npm_execpath ?? 'pnpm';
+  const isScript = /\.[cm]?js$/.test(packageManager);
   const result = spawnSync(
-    packageManager ? process.execPath : 'pnpm',
-    packageManager ? [packageManager, 'run', 'build'] : ['run', 'build'],
+    isScript ? process.execPath : packageManager,
+    isScript ? [packageManager, 'run', 'build'] : ['run', 'build'],
     {
     encoding: 'utf-8',
     stdio: 'pipe',

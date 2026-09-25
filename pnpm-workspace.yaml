@@ -1,3 +1,6 @@
 allowBuilds:
   esbuild: true
   sharp: true
+minimumReleaseAgeExclude:
+  - astro@7.3.5
+  - daisyui@5.7.46
