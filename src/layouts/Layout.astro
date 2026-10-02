@@ -42,8 +42,9 @@ const pageTitle = title === "Stephen Park" ? title : `${title} | Stephen Park`;
   <body class="min-h-screen flex flex-col">
     <label
       class="swap swap-rotate btn btn-ghost btn-circle btn-sm fixed top-4 right-4 z-50"
-      aria-label="Toggle theme"
+      for="theme-toggle"
     >
+      <span class="sr-only">Toggle theme</span>
       <input type="checkbox" id="theme-toggle" />
       <!-- sun: shown when unchecked (dark mode) -->
       <svg

@@ -4,3 +4,4 @@ allowBuilds:
 minimumReleaseAgeExclude:
   - astro@7.3.5
   - daisyui@5.7.46
+  - '@types/node@24.19.1'
