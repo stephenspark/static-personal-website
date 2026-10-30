@@ -14,6 +14,8 @@ pnpm test -- --reporter=verbose  # Run tests with full output
 
 There is no separate lint command — `pnpm build` runs `astro check` for TypeScript and Astro component type validation.
 
+**Toolchain**: Node `^26.13.0` and pnpm `12.16.1`, pinned via `devEngines` in `package.json` (`onFail: "download"` fetches the right versions automatically). `pnpm-workspace.yaml` only holds `allowBuilds` for native deps (`esbuild`, `sharp`).
+
 ## Architecture
 
 This is a single-page Astro 7 static site. The only page is `src/pages/index.astro`.

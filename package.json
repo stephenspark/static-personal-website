@@ -10,16 +10,16 @@
     "astro": "astro",
     "test": "vitest run"
   },
-  "packageManager": "pnpm@12.11.2",
+  "packageManager": "pnpm@12.16.1",
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "^24.21.0",
+      "version": "^26.13.0",
       "onFail": "download"
     },
     "packageManager": {
       "name": "pnpm",
-      "version": "12.11.2",
+      "version": "12.16.1",
       "onFail": "download"
     }
   },
@@ -27,16 +27,16 @@
     "@tailwindcss/vite": "^4.3.3",
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
-    "astro": "^7.3.8",
+    "astro": "^7.4.4",
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.10",
+    "@astrojs/check": "^0.9.12",
     "@tailwindcss/typography": "^0.5.20",
-    "@types/node": "^24.19.2",
+    "@types/node": "^26.6.6",
     "daisyui": "^5.7.50",
-    "vitest": "^5.0.4"
+    "vitest": "^5.0.5"
   }
 }

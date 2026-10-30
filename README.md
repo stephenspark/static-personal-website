@@ -12,8 +12,8 @@ Built with [Astro](https://astro.build), [Tailwind CSS v4](https://tailwindcss.c
 | Styling | Tailwind CSS v4 + DaisyUI v5 + `@tailwindcss/typography` |
 | Analytics | Vercel Analytics + Speed Insights |
 | Testing | Vitest |
-| Package Manager | pnpm |
-| Node | >=24.18.0 |
+| Package Manager | pnpm 12.16.1 |
+| Node | ^26.13.0 |
 
 ## Commands
 
